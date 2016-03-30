@@ -24,5 +24,4 @@ class MongoDbController @Inject()(val reactiveMongoApi: ReactiveMongoApi)
         InternalServerError
     }
   }
-
 }
