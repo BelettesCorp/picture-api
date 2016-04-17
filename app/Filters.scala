@@ -1,10 +1,8 @@
-package controllers
-
 import javax.inject.Inject
 
 import play.api.http.HttpFilters
-import play.filters.cors.CORSFilter
+import utils.CorsFilter
 
-class Filters @Inject() (corsFilter: CORSFilter) extends HttpFilters {
-  def filters = Seq(corsFilter)
+class Filters @Inject() (corsFilter: CorsFilter) extends HttpFilters {
+  val filters = Seq(corsFilter)
 }
