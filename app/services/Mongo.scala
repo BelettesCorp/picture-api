@@ -62,4 +62,5 @@ abstract class Mongo[T](collectionName: String) {
   def findAll(sort: JsObject = Json.obj(), limit: Int = Int.MaxValue) = {
     find(query = Json.obj(), sort = sort, limit = limit)
   }
+
 }

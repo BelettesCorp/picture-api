@@ -37,4 +37,5 @@ object ApiFormat {
     implicit val defaultFormat = Format[Album](defaultRead, defaultWrite)
     implicit val albumCreateFormat = Format[Album](offerCreateRead, defaultWrite)
   }
+
 }

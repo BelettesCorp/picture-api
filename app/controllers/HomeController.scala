@@ -21,4 +21,5 @@ class HomeController @Inject() extends Controller {
   def index = Action {
     Ok( Json.obj("message" -> "Application has started !") )
   }
+
 }

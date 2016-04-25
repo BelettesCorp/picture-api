@@ -45,4 +45,5 @@ class AlbumController @Inject()(val albumDB: AlbumDB)
         Future.successful(BadRequest(JsError.toJson(e)))
     }
   }
+
 }
